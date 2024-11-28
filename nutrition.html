@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Guide - FitLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>FitLife</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="nutrition.html" class="active">Nutrition</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="checkout.html" class="cta-button">Join Now</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="nutrition-page">
+        <section class="nutrition-header">
+            <h1>Nutrition Guide</h1>
+            <p>Fuel your body with the right nutrients</p>
+        </section>
+
+        <section class="meal-plans">
+            <h2>Customized Meal Plans</h2>
+            <div class="plan-grid">
+                <div class="plan-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Weight Loss</h3>
+                    <p>Balanced nutrition plans designed for healthy weight loss</p>
+                    <ul>
+                        <li>Calorie-controlled meals</li>
+                        <li>High protein options</li>
+                        <li>Healthy snack ideas</li>
+                    </ul>
+                    <a href="checkout.html" class="cta-button">Get Plan</a>
+                </div>
+
+                <div class="plan-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Muscle Gain</h3>
+                    <p>High-protein meals for muscle growth and recovery</p>
+                    <ul>
+                        <li>Protein-rich recipes</li>
+                        <li>Pre/Post workout meals</li>
+                        <li>Supplement guidance</li>
+                    </ul>
+                    <a href="checkout.html" class="cta-button">Get Plan</a>
+                </div>
+
+                <div class="plan-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Maintenance</h3>
+                    <p>Balanced nutrition for overall health and wellness</p>
+                    <ul>
+                        <li>Balanced macros</li>
+                        <li>Variety of recipes</li>
+                        <li>Flexible meal timing</li>
+                    </ul>
+                    <a href="checkout.html" class="cta-button">Get Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="nutrition-tips">
+            <h2>Nutrition Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <img src="images/meal-prep.jpg" alt="Meal Prep">
+                    <h3>Meal Prep Basics</h3>
+                    <p>Learn how to prepare healthy meals in advance</p>
+                </div>
+                <div class="tip-item">
+                    <img src="images/portion-control.jpg" alt="Portion Control">
+                    <h3>Portion Control</h3>
+                    <p>Master the art of portion control for better results</p>
+                </div>
+                <div class="tip-item">
+                    <img src="images/supplements.jpg" alt="Supplements">
+                    <h3>Supplement Guide</h3>
+                    <p>Essential supplements for your fitness journey</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="nutrition-calculator">
+            <h2>Calorie Calculator</h2>
+            <div class="calculator-container">
+                <form id="calorie-calculator">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="activity">Activity Level</label>
+                        <select id="activity">
+                            <option value="1.2">Sedentary</option>
+                            <option value="1.375">Light Exercise</option>
+                            <option value="1.55">Moderate Exercise</option>
+                            <option value="1.725">Heavy Exercise</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="cta-button">Calculate</button>
+                </form>
+                <div id="calculator-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FitLife</h3>
+                <p>Your journey to a healthier lifestyle starts here.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="workouts.html">Workouts</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitLife. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
