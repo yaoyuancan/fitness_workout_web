@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - FitLife</title>
+    <title>Maintenance Plan Checkout - FitLife</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .form-group input:invalid {
+            border-color: #ff6b6b;
+        }
+        .form-group input:valid {
+            border-color: #51cf66;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,16 +38,26 @@
     <main class="checkout-page">
         <section class="page-header">
             <div class="header-content">
-                <h1>Complete Your Order</h1>
-                <p>You're one step away from starting your fitness journey</p>
+                <h1>Complete Your Maintenance Plan Order</h1>
+                <p>You're one step away from maintaining your ideal fitness</p>
             </div>
         </section>
 
         <section class="checkout-content">
             <div class="order-summary">
                 <h2>Order Summary</h2>
-                <div id="selected-plan">
-                    <!-- Plan details will be filled by JavaScript -->
+                <div class="plan-details">
+                    <h3>Maintenance Plan</h3>
+                    <ul>
+                        <li>Balanced meal plans</li>
+                        <li>Flexible diet options</li>
+                        <li>Lifestyle integration</li>
+                        <li>Long-term sustainability guide</li>
+                    </ul>
+                    <div class="price">
+                        <span class="amount">$44.99</span>
+                        <span class="period">/month</span>
+                    </div>
                 </div>
             </div>
 
@@ -48,7 +66,7 @@
                 <form id="payment-form">
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" pattern="[A-Za-z\s]+" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -56,23 +74,24 @@
                     </div>
                     <div class="form-group">
                         <label for="card">Card Number</label>
-                        <input type="text" id="card" placeholder="1234 5678 9012 3456" required>
+                        <input type="text" id="card" maxlength="19" placeholder="1234 5678 9012 3456" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="expiry">Expiry Date</label>
-                            <input type="text" id="expiry" placeholder="MM/YY" required>
+                            <input type="text" id="expiry" maxlength="5" placeholder="MM/YY" required>
                         </div>
                         <div class="form-group">
                             <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" placeholder="123" required>
+                            <input type="text" id="cvv" maxlength="3" placeholder="123" required>
                         </div>
                     </div>
-                    <button type="submit" class="cta-button">Complete Purchase</button>
+                    <button type="submit" class="submit-button">Complete Purchase</button>
                 </form>
             </div>
         </section>
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -83,9 +102,9 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="workouts.html">Workouts</a></li>
-                    <li><a href="nutrition.html">Nutrition</a></li>
                     <li><a href="programs.html">Programs</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="tips.html">Tips</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -101,8 +120,6 @@
             <p>&copy; 2024 FitLife. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="js/main.js" defer></script>
-    <script src="js/checkout.js" defer></script>
+    <script src="js/form-validation.js"></script>
 </body>
 </html>

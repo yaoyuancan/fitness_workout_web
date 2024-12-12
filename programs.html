@@ -10,22 +10,20 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <h1>FitLife</h1>
+            <div class="nav-brand">
+                <a href="index.html"><img src="images/logo.png" alt="FitLife Logo" class="nav-logo"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="workouts.html">Workouts</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="programs.html" class="active">Programs</a></li>
-                <li><a href="tips.html">Tips</a></li>
-                <li><a href="checkout.html" class="cta-button">Join Now</a></li>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="workouts.html" class="nav-link">Workouts</a></li>
+                <li class="nav-item"><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link active">Programs</a></li>
+                <li class="nav-item"><a href="tips.html" class="nav-link">Tips</a></li>
+                <li class="nav-item"><a href="checkout.html?plan=beginner&price=49.99" class="nav-link cta-button">Join Now</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
@@ -36,32 +34,17 @@
         </section>
 
         <section class="featured-programs">
-            <div class="program-card premium">
-                <div class="program-badge">Most Popular</div>
-                <h2>Total Body Transformation</h2>
-                <p class="duration">12 Weeks</p>
-                <ul class="program-features">
-                    <li><i class="fas fa-check"></i> Personalized workout plan</li>
-                    <li><i class="fas fa-check"></i> Custom meal plans</li>
-                    <li><i class="fas fa-check"></i> Weekly progress tracking</li>
-                    <li><i class="fas fa-check"></i> 1-on-1 coaching sessions</li>
-                    <li><i class="fas fa-check"></i> Access to premium content</li>
-                </ul>
-                <div class="price">$99.99/month</div>
-                <a href="checkout.html" class="cta-button">Start Now</a>
-            </div>
-
             <div class="program-card">
-                <h2>Weight Loss Specialist</h2>
+                <h2>Beginner Basics</h2>
                 <p class="duration">8 Weeks</p>
                 <ul class="program-features">
-                    <li><i class="fas fa-check"></i> Cardio-focused workouts</li>
-                    <li><i class="fas fa-check"></i> Nutrition guidance</li>
+                    <li><i class="fas fa-check"></i> Workout plans</li>
+                    <li><i class="fas fa-check"></i> Nutrition basics</li>
+                    <li><i class="fas fa-check"></i> Email support</li>
                     <li><i class="fas fa-check"></i> Progress tracking</li>
-                    <li><i class="fas fa-check"></i> Community support</li>
                 </ul>
-                <div class="price">$79.99/month</div>
-                <a href="checkout.html" class="cta-button">Start Now</a>
+                <div class="price">$49.99/month</div>
+                <a href="checkout.html?plan=beginner&price=49.99" class="cta-button">Start Now</a>
             </div>
 
             <div class="program-card">
@@ -74,7 +57,20 @@
                     <li><i class="fas fa-check"></i> Premium support</li>
                 </ul>
                 <div class="price">$89.99/month</div>
-                <a href="checkout.html" class="cta-button">Start Now</a>
+                <a href="checkout.html?plan=muscle&price=89.99" class="cta-button">Start Now</a>
+            </div>
+
+            <div class="program-card">
+                <h2>Elite Performance</h2>
+                <p class="duration">24 Weeks</p>
+                <ul class="program-features">
+                    <li><i class="fas fa-check"></i> Custom workout plans</li>
+                    <li><i class="fas fa-check"></i> 1-on-1 coaching</li>
+                    <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                    <li><i class="fas fa-check"></i> VIP support</li>
+                </ul>
+                <div class="price">$149.99/month</div>
+                <a href="checkout.html?plan=elite&price=149.99" class="cta-button">Start Now</a>
             </div>
         </section>
 
@@ -138,7 +134,7 @@
                 <ul>
                     <li><a href="workouts.html">Workouts</a></li>
                     <li><a href="nutrition.html">Nutrition</a></li>
-                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="tips.html">Tips</a></li>
                 </ul>
             </div>
             <div class="footer-section">

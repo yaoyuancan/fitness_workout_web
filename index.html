@@ -1,93 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife - Your Fitness Journey Starts Here</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife - Transform Your Life Through Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>FitLife</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="workouts.html">Workouts</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="tips.html">Tips</a></li>
-                <li><a href="checkout.html" class="cta-button">Join Now</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="index.html"><img src="images/logo.png" alt="FitLife Logo" class="nav-logo" /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="workouts.html" class="nav-link">Workouts</a>
+        </li>
+        <li class="nav-item">
+          <a href="nutrition.html" class="nav-link">Nutrition</a>
+        </li>
+        <li class="nav-item">
+          <a href="programs.html" class="nav-link">Programs</a>
+        </li>
+        <li class="nav-item">
+          <a href="tips.html" class="nav-link">Tips</a>
+        </li>
+        <li class="nav-item">
+          <a href="checkout.html?plan=beginner&price=49.99" class="nav-link cta-button">Join Now</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Transform Your Life Through Fitness</h1>
-                <p>Personalized workout plans for every fitness level</p>
-                <a href="programs.html" class="cta-button">Get Started</a>
-            </div>
-        </section>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Transform Your Life Through Fitness</h1>
+        <p>Personalized workout plans for every fitness level</p>
+        <a href="programs.html" class="cta-button">Get Started</a>
+      </div>
+    </section>
 
-        <section class="features">
-            <h2>Why Choose FitLife?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Custom Workouts</h3>
-                    <p>Tailored programs for beginners to advanced</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-apple-alt"></i>
-                    <h3>Nutrition Guidance</h3>
-                    <p>Expert advice on healthy eating</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Community Support</h3>
-                    <p>Join our fitness community</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="video-list">
+      <h2>Fitness Youtube Videos</h2>
+      <div class="video-content" id="video"></div>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>FitLife</h3>
-                <p>Your journey to a healthier lifestyle starts here.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="workouts.html">Workouts</a></li>
-                    <li><a href="nutrition.html">Nutrition</a></li>
-                    <li><a href="programs.html">Programs</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+    <section class="features">
+      <h2>Why Choose FitLife?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Custom Workouts</h3>
+          <p>Tailored programs for beginners to advanced</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 FitLife. All rights reserved.</p>
+        <div class="feature-card">
+          <i class="fas fa-apple-alt"></i>
+          <h3>Nutrition Guidance</h3>
+          <p>Expert advice on healthy eating</p>
         </div>
-    </footer>
+        <div class="feature-card">
+          <i class="fas fa-users"></i>
+          <h3>Community Support</h3>
+          <p>Join our fitness community</p>
+        </div>
+      </div>
 
-    <script src="js/main.js"></script>
+      <div class="highlight" id="highlight">
+        <div class="left-highlight">
+          <img src="./images/image1.png" alt="image 1" />
+          <img src="./images/image3.png" alt="image 3" />
+          <img src="./images/image4.png" alt="image 4" />
+          <img src="./images/image2.png" alt="image 2" />
+        </div>
+        <div class="right-highlight">
+          <span>some highlights</span>
+
+          <div class="reason-to-choose">
+            <span class='stroke-text'>Reasons</span>
+            <span> to choose us</span>
+          </div>
+
+          <div class='promotion'>
+            <div class="advantage-1">
+              <i class="ri-magic-line"></i>
+              <span>A team of over 20 expert coaches</span>
+            </div>
+            <div class="advantage-2">
+              <i class="ri-magic-line"></i>
+              <span>Train more efficiently and quickly than ever before</span>
+            </div>
+            <div class="advantage-3">
+              <i class="ri-magic-line"></i>
+              <span>Enjoy the first 2 months free as a new member
+              </span>
+            </div>
+            <div class="advantage-4">
+              <i class="ri-magic-line"></i>
+              <span>Faithful partners</span>
+            </div>
+          </div>
+          <span class="partner-title">
+            Our partiners
+          </span>
+
+          <div class="partners">
+            <img src="./images/icon1.png" alt="icon1" />
+            <img src="./images/icon2.png" alt="icon2" />
+            <img src="./images/icon3.png" alt="icon3" />
+            <img src="./images/icon4.png" alt="icon4" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>FitLife</h3>
+        <p>Your journey to a healthier lifestyle starts here.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="programs.html">Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FitLife. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
+
 </html>

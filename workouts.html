@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workouts - FitLife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <h1>FitLife</h1>
+            <div class="nav-brand">
+                <a href="index.html"><img src="images/logo.png" alt="FitLife Logo" class="nav-logo"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="workouts.html" class="active">Workouts</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="tips.html">Tips</a></li>
-                <li><a href="checkout.html" class="cta-button">Join Now</a></li>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="workouts.html" class="nav-link active">Workouts</a></li>
+                <li class="nav-item"><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+                <li class="nav-item"><a href="tips.html" class="nav-link">Tips</a></li>
+                <li class="nav-item"><a href="checkout.html?plan=beginner&price=49.99" class="nav-link cta-button">Join Now</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
@@ -44,7 +45,7 @@
                     <li>30-minute workouts</li>
                     <li>Full guidance and form tips</li>
                 </ul>
-                <a href="checkout.html" class="cta-button">Start Now</a>
+                <a href="checkout-beginner.html" class="cta-button">Start Now</a>
             </div>
 
             <div class="level-card intermediate">
@@ -55,7 +56,7 @@
                     <li>45-minute workouts</li>
                     <li>Nutrition guidance included</li>
                 </ul>
-                <a href="checkout.html" class="cta-button">Start Now</a>
+                <a href="checkout-intermediate.html" class="cta-button">Start Now</a>
             </div>
 
             <div class="level-card advanced">
@@ -66,7 +67,7 @@
                     <li>60-minute workouts</li>
                     <li>Personalized coaching</li>
                 </ul>
-                <a href="checkout.html" class="cta-button">Start Now</a>
+                <a href="checkout-advanced.html" class="cta-button">Start Now</a>
             </div>
         </section>
 
@@ -106,7 +107,7 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="workouts.html">Workouts</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="nutrition.html">Nutrition</a></li>
                     <li><a href="programs.html">Programs</a></li>
                 </ul>

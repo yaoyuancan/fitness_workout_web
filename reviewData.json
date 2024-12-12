@@ -1,0 +1,26 @@
+
+{
+  "reviewData":[
+    {
+      "image": "./images/david1.jpg",
+      "review":
+        "I'm so glad I chose FitLife! With the perfect plan and program, I've already reached my dream body!",
+      "name": "David",
+      "status": "Business Owner"
+    },
+    {
+      "image": "./images/david2.jpg",
+      "review":
+        "Joining FitLife was the best decision I've made! With the right plan and guidance, I've successfully achieved my ideal physique. ",
+      "name": "Wanlong",
+      "status": "Developer"
+    },
+    {
+      "image": "./images/david3.jpg",
+      "review":
+        " Choosing FitLife and the perfect program helped me reach my fitness goals—I couldn't be happier with the results!",
+      "name": "Wu",
+      "status": "Engineer"
+    }
+  ]
+}
